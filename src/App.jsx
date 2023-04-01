@@ -6,6 +6,8 @@ import Blogs from './components/Blogs/Blogs';
 import SiteCart from './components/SideCart/SiteCart';
 import { useState } from "react";
 import Qna from "./components/Qna/Qna";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [spentTime, setSpentTime] = useState([]);
@@ -36,6 +38,7 @@ function App() {
         </div>
       </div>
       <Qna />
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

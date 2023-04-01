@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const SiteCart = ({ spentTime, bookMark, count}) => {
@@ -27,10 +28,13 @@ const SiteCart = ({ spentTime, bookMark, count}) => {
         }
     },[bookMark]);
 
+    const handleTostify = ()=>{
+        toast("Wow so easy!");
+    }
     
     return (
         <div className='mt-16'>
-            <button className='btn btn-outline'>Spent time on read : {time} min</button>
+            <button onClick={handleTostify} className='btn btn-outline'>Spent time on read : {time} min</button>
            
             <div className='border mt-3 mr-5 bg-neutral-100'>
                 <h3>Bookmarked Blogs : {count}</h3>
