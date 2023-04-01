@@ -1,7 +1,6 @@
 import React from "react";
 
-const SingleBlog = ({ blog }) => {
-  console.log(blog);
+const SingleBlog = ({ blog, handleSpentTime }) => {
   return (
     <div className="ml-24 mt-16">
       <div className="card w-4/5  shadow-xl">
@@ -26,7 +25,7 @@ const SingleBlog = ({ blog }) => {
           </div>
           <h2 className="card-title">{blog.title}</h2>
           <div className="text-left underline">
-            <a className="">Mark as Read</a>
+            <a onClick={()=>handleSpentTime(blog.readTime)} className="">Mark as Read</a>
           </div>
         </div>
       </div>
