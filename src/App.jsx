@@ -5,6 +5,7 @@ import Navbar from "./components/Header/Navbar";
 import Blogs from './components/Blogs/Blogs';
 import SiteCart from './components/SideCart/SiteCart';
 import { useState } from "react";
+import Qna from "./components/Qna/Qna";
 
 function App() {
   const [spentTime, setSpentTime] = useState("");
@@ -32,6 +33,7 @@ function App() {
           <SiteCart spentTime={spentTime} />
         </div>
       </div>
+      <Qna />
     </div>
   );
 }
