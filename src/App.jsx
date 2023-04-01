@@ -8,7 +8,7 @@ import { useState } from "react";
 import Qna from "./components/Qna/Qna";
 
 function App() {
-  const [spentTime, setSpentTime] = useState("");
+  const [spentTime, setSpentTime] = useState([]);
 
   const handleSpentTime = (time) => {
     const previousSpentTime = JSON.parse(localStorage.getItem("spentTime"));
@@ -22,12 +22,14 @@ function App() {
       setSpentTime(time);
     }
   };
+  
   return (
     <div className="App">
       <Navbar />
       <div className="main grid grid-cols-3">
         <div className="blog-container col-span-2">
-          <Blogs handleSpentTime={handleSpentTime}></Blogs>
+          <Blogs handleSpentTime={handleSpentTime}
+          ></Blogs>
         </div>
         <div className="sideCart col-span-1">
           <SiteCart spentTime={spentTime} />

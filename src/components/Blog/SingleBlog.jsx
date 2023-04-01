@@ -1,6 +1,7 @@
 import React from "react";
 
-const SingleBlog = ({ blog, handleSpentTime }) => {
+const SingleBlog = ({blog, handleSpentTime, handleBookmark }) => {
+
   return (
     <div className="ml-24 mt-16">
       <div className="card w-4/5  shadow-xl">
@@ -20,7 +21,7 @@ const SingleBlog = ({ blog, handleSpentTime }) => {
             </div>
             <div className="flex">
               <p className="mr-2">{blog.readTime} min read</p>
-              <i className="fa fa-bookmark mt-1"></i> 
+              <i onClick={()=>handleBookmark(blog.title)} className="fa fa-bookmark mt-1"></i> 
             </div>
           </div>
           <h2 className="card-title">{blog.title}</h2>

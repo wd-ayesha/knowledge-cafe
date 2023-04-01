@@ -1,17 +1,40 @@
 import React, { useEffect, useState } from 'react';
 
-const SiteCart = ({ spentTime }) => {
-    const [time, setTime] = useState(0);
+
+const SiteCart = ({ spentTime, bookMark, count}) => {
+    const [time, setTime] = useState(spentTime);
+    const[bookMarked, setBookMarked] = useState([bookMark]);
+
     useEffect( () => {
         const getSpentTimeFromStorage = localStorage.getItem("spentTime");
-        setTime(getSpentTimeFromStorage)
+        if(getSpentTimeFromStorage){
+            setTime(getSpentTimeFromStorage)
+        }
+        else{
+            setTime(0);
+        }
+        
     },[spentTime]);
+   
+    useEffect(() => {
+        const getBookMark = JSON.parse(localStorage.getItem("bookmark"));
+
+        if(getBookMark){
+            setBookMarked(JSON.parse(getBookMark));
+        }
+        else{
+            setBookMarked("Why to Learn New Technologies")
+        }
+    },[bookMark]);
+
+    
     return (
         <div className='mt-16'>
             <button className='btn btn-outline'>Spent time on read : {time} min</button>
            
-            <div className='border mt-3 mr-5 bg-neutral-400'>
-                <h3>Bookmarked Blogs : </h3>
+            <div className='border mt-3 mr-5 bg-neutral-100'>
+                <h3>Bookmarked Blogs : {count}</h3>
+                <h4>{bookMarked}</h4>
             </div>
         </div>
     );

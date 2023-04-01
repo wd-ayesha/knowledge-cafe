@@ -10,7 +10,7 @@
         "image": "",
         "coverImage": "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "readTime": "05",
-        "published": "january 4"
+        "published": "4th January"
       },
       {
         "id": 2,
@@ -21,7 +21,7 @@
         "title": "How to get your first job as a self-taught programmer",
         "coverImage": "https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "readTime": "10",
-        "published": "Mar 14"
+        "published": "14th March"
       },
       {
         "id": 3,
@@ -34,7 +34,7 @@
         "coverImage": "https://images.pexels.com/photos/326515/pexels-photo-326515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         
         "readTime": "07",
-        "published": "April 20"
+        "published": "20th April"
       },
       {
         "id": 4,
@@ -46,6 +46,6 @@
         "image": "https://via.placeholder.com/800x450",
         "coverImage": "https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "readTime": "08",
-        "published": "june 10"
+        "published": "10th June"
       }
 ]
