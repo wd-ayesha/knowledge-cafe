@@ -8,7 +8,7 @@
         "title": "10 Tips for Writing Better Blog Posts",
         "image": "",
         "coverImage": "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "readTime": 5,
+        "readTime": "05",
         "published": "january 4"
       },
       {
@@ -20,7 +20,7 @@
         "title": "How to Build a Successful Startup",
       
         "coverImage": "https://images.pexels.com/photos/326515/pexels-photo-326515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "readTime": 10,
+        "readTime": "10",
         "published": "Mar 14"
       },
       {
@@ -32,19 +32,19 @@
         "title": "The Benefits of Meditation",
         "image": "",
         "coverImage": "https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "readTime": 7,
+        "readTime": "07",
         "published": "April 20"
       },
       {
         "id": 4,
         "author": {
-          "name": "Emily Davis",
+          "name": "Richardson",
           "image": "public/images/4.png"
         },
         "title": "Why Traveling is Good for the Soul",
         "image": "https://via.placeholder.com/800x450",
         "coverImage": "https://images.pexels.com/photos/245032/pexels-photo-245032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "readTime": 8,
+        "readTime": "08",
         "published": "june 10"
       }
 ]
