@@ -1,13 +1,13 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import './App.css'
+import Navbar from './components/Header/Navbar';
 
 function App() {
 
   return (
     <div className="App">
-      {/* <i className="fa fa-user"></i>
-      <i className="fa fa-envelope"></i> */}
+      <Navbar />
     </div>
   )
 }
